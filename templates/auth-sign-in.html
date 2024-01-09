@@ -1,0 +1,16 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<div class="login">
+
+	<h1>IRIS FIELD'S</h1>
+   <h1> The first field is {{input}}</h1>
+    <form action="sec">
+      {% csrf_token %}
+    	  sepal length <input type="text" name="inputone" placeholder="input1" required="required" />
+        sepal width <input type="text" name="inputtwo" placeholder="input2" required="required" />
+        petal length <input type="text" name="inputthree" placeholder="input3" required="required" />
+        petal width <input type="text" name="inputfour" placeholder="input4" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">submit.</button>
+    </form>
+</div>
